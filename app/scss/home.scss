@@ -63,7 +63,29 @@ section.HowtoApply{
         padding-top: 100px;
         .titleBox{
             text-transform: uppercase;
-            margin-bottom: 170px;
+            margin-bottom: 130px;
+        }
+        .stepByStepContainer{
+            display: flex;     
+            flex-wrap: wrap;
+            justify-content: center;
+            .step{
+                width: 350px;
+                height: 285px;
+                padding: 30px 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 50px;
+                p{
+                    font-size: 17px;
+                    color: #000;
+                    text-align: center;
+                    margin-top: 20px;
+                    font-weight: 500;
+                }
+            }
         }
     }
 }
