@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700&display=swap');
 @import "home.scss";
+@import "normalize.scss";
 
 .wrapper{
-    width: 1433px;
+    width: 1280px;
     display: block;
     margin: 0 auto;
 }
 
-a, p, span, h1, h2, h3, h4{
-    font-family: 'Raleway'
+p, span, h1, h2, h3, h4{
+    font-family: 'Rajdhani';
+}
+
+h2{
+    font-family: 'Rajdhani';
+    font-weight: bold;
+    font-size: 63px;
+    font-style: italic;
 }
