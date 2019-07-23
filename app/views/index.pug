@@ -13,32 +13,32 @@ body
                     h2 presidentes de júri
                 .juryContainer
                     .juryItem
-                        img(src="../images/teste.jpg", alt="") 
+                        img(src="../images/Obama.png", alt="") 
                         .juryContent
                             p.name Barack, Obama
                             p.description Filme
                     .juryItem
-                        img(src="../images/teste.jpg", alt="") 
+                        img(src="../images/Obama.png", alt="") 
                         .juryContent
                             p.name Barack, Obama
                             p.description Filme
                     .juryItem
-                        img(src="../images/teste.jpg", alt="") 
+                        img(src="../images/Obama.png", alt="") 
                         .juryContent
                             p.name Barack, Obama
                             p.description Filme
                     .juryItem
-                        img(src="../images/teste.jpg", alt="") 
+                        img(src="../images/Obama.png", alt="") 
                         .juryContent
                             p.name Barack, Obama
                             p.description Filme
                     .juryItem
-                        img(src="../images/teste.jpg", alt="") 
+                        img(src="../images/Obama.png", alt="") 
                         .juryContent
                             p.name Barack, Obama
                             p.description Filme
                     .juryItem
-                        img(src="../images/teste.jpg", alt="") 
+                        img(src="../images/Obama.png", alt="") 
                         .juryContent
                             p.name Barack, Obama
                             p.description Filme
@@ -49,20 +49,30 @@ body
                         h2 Como inscrever suas peças
                     .stepByStepContainer
                         .step
-                            img(src="../images/icontst.jpg", alt="")
-                            p Crie uma pasta com o nome de sua agência e subpastas para cada categoria
+                            .media
+                                img(src="../images/firststep.png", alt="")
+                            .text
+                                p Crie uma pasta com o nome de sua agência e subpastas para cada categoria
                         .step
-                            img(src="../images/icontst.jpg", alt="")
-                            p Crie uma pasta com o nome de sua agência e subpastas para cada categoria
+                            .media
+                                img(src="../images/secondstep.png", alt="")
+                            .text
+                                p Nomeie seus arquivos com o título das peças. Em caso de campanha, adicione números. Exemplo: nomedacampanha02.jpg
                         .step
-                            img(src="../images/icontst.jpg", alt="")
-                            p Crie uma pasta com o nome de sua agência e subpastas para cada categoria
+                            .media
+                                img(src="../images/thirdstep.png", alt="")
+                            .text   
+                                p Multiplique o número de peças por 100, deposite o valor na conta do Clube de Criação e junte o comprovante à pasta da sua agência.
                         .step
-                            img(src="../images/icontst.jpg", alt="")
-                            p Crie uma pasta com o nome de sua agência e subpastas para cada categoria
+                            .media
+                                img(src="../images/fourth.png", alt="")
+                            .text
+                                p Comprima a pasta e sua o arquivo .rar ou .zip no WeTransfer
                         .step
-                            img(src="../images/icontst.jpg", alt="")
-                            p Crie uma pasta com o nome de sua agência e subpastas para cada categoria
+                            .media
+                                img(src="../images/fifth.png", alt="")
+                            .text
+                                p Envie o link do WeTransfer ao preencher o formulário abaixo.
         section.bankData
             .wrapper
                 .titleBox
@@ -111,12 +121,15 @@ body
                                         label Cargo*
                                     .inputElement
                                         input(type="text" name="jobTitle" required).jobTitle
-                            .inputContainer.file
-                                .inputBox.uploadFile
-                                    .inputFile
-                                        input(type="text" name="file").fileName
-                                    .inputElement
-                                        button.searchFile
+                            .inputContainer
+                                .bar
+                                    img(src="../images/barform.png", alt="")
+                            .inputContainer
+                                .inputBox.file
+                                    .inputElement.file
+                                        input(type="text" name="file" value='').fileName
+                                    .searchFile
+                                        button Pesquisar
                             .submitBox
                                 button.submitForm  Enviar
 

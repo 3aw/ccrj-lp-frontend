@@ -1,5 +1,17 @@
+.bar{
+    margin: 35px auto 65px;
+    &.jury{
+        margin: 20px auto 50px;
+    }
+}
+
 section.jury{
-    background: #000;
+    background: url('../images/bgjury.jpg');
+    padding-bottom: 100px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     .wrapper{
         display: flex;
         justify-content: center;
@@ -7,7 +19,17 @@ section.jury{
         align-items: center;
         padding-top: 50px;
         .juryTitleBox{
-            margin-bottom: 40px;
+            background-size: 40px;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                background: url('../images/halftoneTexture.png');
+                background-repeat: no-repeat;
+                width: 100%;
+                background-position: center;
+                height: 5px;
+            }
             h2{
                 text-transform: uppercase;
                 color: #fff;
@@ -20,29 +42,36 @@ section.jury{
             width: 80%;
             .juryItem{
                 width: 270px;
-                background: #000;
+                background: transparent;
                 height: 335px;
                 margin-right:  2px;
-                margin-top: 20px;
+                margin-top: 80px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 flex-direction: column;
+                img{
+                    border: solid 10px #3e321a;
+                    border-radius: 50%;
+                }
                 .juryContent{
                     p{
                         text-transform: uppercase;
-                        font-size: 32px;
+                        font-size: 30px;
                         width: 100%;
                         text-align: center;
                         font-weight: 600;
                         &.name{
-                            color: #000;
-                            background: #fff;
-                            padding: 0 20px;
+                            color: #251e10;
+                            background: url('../images/jurynamebg.png');
+                            background-position: center;
+                            background-size: 100%;
+                            background-repeat: no-repeat;
+                            padding: 20px 25px;
                         }
                         &.description{
                             color: #fff;
-                            background: #000;
+                            background: transparent;
                         }
                     }
                 }
@@ -52,24 +81,29 @@ section.jury{
 }
 
 section.HowtoApply{
-    background: url('../images/bgcourt.jpg');
+    background: url('../images/texturebg.jpg');
     background-repeat: no-repeat;
-    background-position: top;
-    background-color: #fff;
-    .bgBox{
-        height: 100%;
-        background: url('../images/texturebg.jpg');
-        background-repeat: no-repeat;
-        background-position: bottom;
-        padding-bottom: 80px;
+    background-position: bottom;
+    padding-bottom: 90px;
         .wrapper{
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 100px;
+            padding-top: 90px;
+            
             .titleBox{
                 text-transform: uppercase;
-                margin-bottom: 130px;
+                margin-bottom: 50px;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    background: url('../images/subtexture.png');
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    background-position: center;
+                    height: 5px;
+                }
             }
             .stepByStepContainer{
                 display: flex;     
@@ -77,25 +111,36 @@ section.HowtoApply{
                 justify-content: center;
                 .step{
                     width: 350px;
-                    height: 285px;
+                    height: 350px;
                     padding: 30px 10px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
                     margin-right: 50px;
-                    p{
-                        font-size: 17px;
-                        color: #000;
-                        text-align: center;
-                        margin-top: 20px;
-                        font-weight: 500;
+                    margin-top: 80px;
+                    .media{
+                        height: 175px;
+                        img{
+                            margin-right: 15px;
+                        }
+                    }
+                    .text{
+                        display:flex;
+                        p{
+                            font-size: 17px;
+                            align-self: flex-start;
+                            padding: 30px;
+                            color: #000;
+                            text-align: center;
+                            font-weight: 500;
+                        }
                     }
                 }
             }
         }
     }
-}
+
 
 section.bankData{
     background: #bb9f58;
@@ -103,6 +148,18 @@ section.bankData{
     background-repeat: no-repeat;
     background-position: bottom;
     padding-bottom: 100px;
+    .titleBox{
+        &::after{
+            content: '';
+            position: absolute;
+            background: url('../images/bankbar.png');
+            background-repeat: no-repeat;
+            width: 100%;
+            left: 0;
+            background-position: center;
+            height: 5px;
+        }
+    }
     .wrapper{
         display: flex;
         flex-direction: column;
@@ -120,7 +177,10 @@ section.bankData{
 }
 
 section.form{
-    background: #000;
+    background: url('../images//bgform.jpg');
+    padding-bottom: 225px;
+    background-size: cover;
+    background-position: top;
     .wrapper{
         display: flex;
         justify-content: center;
@@ -154,15 +214,15 @@ section.form{
                     color: #2b2212;
                     font-size: 56px;
                     font-weight: 600;
-                    padding: 10px 20px;
+                    padding: 10px 50px;
                 }
             }
             .form{
+                padding: 0 50px;
                 form{
                     .inputContainer{
                         display: flex;
                         width: 100%;
-                        // justify-content: space-between;
                         .inputBox{
                             width: 100%;
                             &.email{
@@ -183,33 +243,64 @@ section.form{
                                 font-size: 18px;
                                 margin-bottom: 20px
                             }
-                            &.uploadFile{
-                                display:none;
+                            &.file{
+                                display:flex;
+                                justify-content: center;
+                                width: 100%;   
                             }
                         }
-                        input{
-                            padding: 10px 10px;
-                            font-family: 'Raleway';
-                            font-size: 16px;
-                            border: solid 2px #bb9f58;
-                            box-sizing: border-box;
-                            margin-bottom: 20px;
+                        .inputElement{
+                            &.file{
+                                width:30%;
+                                margin-right: 20px;
+                            }
+                            input{
+                                padding: 10px 10px;
+                                font-family: 'Raleway';
+                                font-size: 16px;
+                                border: solid 2px #bb9f58;
+                                box-sizing: border-box;
+                                margin-bottom: 20px;
+                                width: 100%;
+                                &.name{
+                                    width: 100%;
+                                }
+                                &.email{
+                                    width: 90%;
+                                }
+                                &.phone{
+                                    width: 100%;
+                                }
+                                &.agency{
+                                    width: 85%;
+                                }
+                                &.jobTitle{
+                                    width: 100%;
+                                }
+                                &.fileName{
+                                    width: 100%;
+                                    background: transparent;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                    .searchFile{
+                        width: 10%;
+                        background: #b99d57;
+                        height: 45px;
+                        button{
                             width: 100%;
-                            &.name{
-                                width: 100%;
-                            }
-                            &.email{
-                                width: 90%;
-                            }
-                            &.phone{
-                                width: 100%;
-                            }
-                            &.agency{
-                                width: 85%;
-                            }
-                            &.jobTitle{
-                                width: 100%;
-                            }
+                            background: url('../images/glass.png');
+                            background-repeat: no-repeat;
+                            background-position: 90px;
+                            color: #282011;
+                            padding: 10px 35px 10px 15px;
+                            border: none;
+                            font-family: 'Signika', sans-serif;
+                            font-size: 16px;
+                            font-style: italic;
+                            
                         }
                     }
                 }
@@ -219,10 +310,18 @@ section.form{
                     display: flex;
                     justify-content: center;
                     button{
+                        background: url('../images/buttonbg.png');
+                        background-position: center;
+                        border:none;
+                        background-repeat: no-repeat;
+                        cursor: pointer;
                         padding: 15px 40px;
-                        color: #000;
+                        color: #251e10;
                         font-family: 'Rajdhani';
                         font-weight: 600;
+                        font-size: 32px;
+                        text-transform: uppercase;
+                        font-style: italic;
                     }
                 }
             }
