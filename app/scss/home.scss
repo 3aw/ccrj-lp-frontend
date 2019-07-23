@@ -118,3 +118,96 @@ section.bankData{
         }
     }
 }
+
+section.form{
+    background: #000;
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .titleBox{
+            h2{
+                color: #fff;
+                margin-top: 100px;
+            }
+        }
+        .description{
+            p{
+                color: #fff;
+                font-family: 'Raleway';
+                font-size: 18px;
+                text-transform: none;
+                font-weight: 500;
+                text-align: center;
+                padding: 0px 125px;
+            }
+        }
+        .formBox{       
+            width: 100%;
+            .formTitle{
+                width: 100%;
+                background: #bb9f58;
+                margin-top: 75px;
+                margin-bottom: 25px;
+                h2{
+                    color: #2b2212;
+                    font-size: 56px;
+                    font-weight: 600;
+                    padding: 10px 20px;
+                }
+            }
+            .form{
+                form{
+                    .inputContainer{
+                        .inputBox{
+                            .inputlabel{
+                                font-family: 'Raleway';
+                                color: #fff;
+                                font-size: 18px;
+                            }
+                            &.uploadFile{
+                                display:none;
+                            }
+                        }
+                        input{
+                            padding: 10px 10px;
+                            font-family: 'Raleway';
+                            font-size: 16px;
+                            border: solid 2px #bb9f58;
+                            box-sizing: border-box;
+                            &.name{
+                                width: 100%;
+                            }
+                            &.email{
+                                width: 55%;
+                                [required]{
+                                    color: none;
+                                }
+                            }
+                            &.phone{
+                                width: 30%;
+                            }
+                            &.agency{
+                                width: 30%;
+                            }
+                            &.jobTitle{
+                                width: 55%;
+                            }
+                        }
+                    }
+                }
+                .submitBox{
+                    width: 20%;
+                    margin: 50px auto;
+                    button{
+                        padding: 15px 40px;
+                        color: #000;
+                        font-family: 'Rajdhani';
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

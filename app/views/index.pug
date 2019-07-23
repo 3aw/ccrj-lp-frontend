@@ -72,5 +72,51 @@ body
                     p banco inter
                     p c/c xxx-xx
                     p cnpj: XXXX.XXXX.XXXXX/0001
-        
+        section.form
+            .wrapper   
+                .titleBox
+                    h2 Inscrição
+                .description 
+                    p Fazer a inscrição de peças no anuário é simples, fácil e sem sofrimento. Mesmo assim, caso tenha alguma dúvida entre em contato pelo e-mail anuario@clubedecriacao.rio
+                .formBox
+                    .formTitle
+                        h2 responsável
+                    .form
+                        form(action="")
+                            .inputContainer
+                                .inputBox
+                                    .inputLabel 
+                                        label Nome
+                                    .inputElement
+                                        input.name
+                            .inputContainer
+                                .inputBox
+                                    .inputLabel 
+                                        label E-mail*
+                                    .inputElement
+                                        input(type="text" name="name" required).email
+                                .inputBox
+                                    .inputLabel 
+                                        label Telefone*
+                                    .inputElement
+                                        input(type="text" name="phone" required).phone
+                            .inputContainer
+                                .inputBox
+                                    .inputLabel 
+                                        label Agência*
+                                    .inputElement
+                                        input(type="text" name="agency" required).agency
+                                .inputBox
+                                    .inputLabel 
+                                        label Cargo*
+                                    .inputElement
+                                        input(type="text" name="jobTitle" required).jobTitle
+                            .inputContainer.file
+                                .inputBox.uploadFile
+                                    .inputFile
+                                        input(type="text" name="file").fileName
+                                    .inputElement
+                                        button.searchFile
+                            .submitBox
+                                button.submitForm  Enviar
 
