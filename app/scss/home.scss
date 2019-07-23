@@ -162,8 +162,21 @@ section.form{
                     .inputContainer{
                         display: flex;
                         width: 100%;
+                        // justify-content: space-between;
                         .inputBox{
                             width: 100%;
+                            &.email{
+                                width: 60%
+                            }
+                            &.phone{
+                                width: 40%;
+                            }
+                            &.agency{
+                                width: 40%;
+                            }
+                            &.jobTitle{
+                                width: 60%;
+                            }
                             .inputlabel{
                                 font-family: 'Raleway';
                                 color: #fff;
@@ -186,19 +199,16 @@ section.form{
                                 width: 100%;
                             }
                             &.email{
-                                width: 55%;
-                                [required]{
-                                    color: none;
-                                }
+                                width: 90%;
                             }
                             &.phone{
-                                width: 30%;
+                                width: 100%;
                             }
                             &.agency{
-                                width: 30%;
+                                width: 85%;
                             }
                             &.jobTitle{
-                                width: 55%;
+                                width: 100%;
                             }
                         }
                     }
@@ -206,6 +216,8 @@ section.form{
                 .submitBox{
                     width: 20%;
                     margin: 50px auto;
+                    display: flex;
+                    justify-content: center;
                     button{
                         padding: 15px 40px;
                         color: #000;
