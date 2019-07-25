@@ -178,7 +178,7 @@ section.bankData{
 
 section.form{
     background: url('../images//bgform.jpg');
-    padding-bottom: 225px;
+    padding-bottom: 100px;
     background-size: cover;
     background-position: top;
     .wrapper{
@@ -187,12 +187,23 @@ section.form{
         flex-direction: column;
         align-items: center;
         .titleBox{
+            &::after{
+                content: '';
+                position: absolute;
+                background: url('../images/halftoneTexture.png');
+                background-repeat: no-repeat;
+                width: 100%;
+                background-position: center;
+                height: 5px;
+                left: 0;
+            }
             h2{
                 color: #fff;
                 margin-top: 100px;
             }
         }
         .description{
+            margin-top: 60px;
             p{
                 color: #fff;
                 font-family: 'Raleway';
@@ -327,4 +338,7 @@ section.form{
             }
         }
     }
+}
+section.footer{
+
 }
