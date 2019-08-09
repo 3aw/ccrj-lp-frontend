@@ -95,12 +95,21 @@ body
         section.bankData
             .wrapper
                 .titleBox
-                    h2 Dados Bancários
-                .infoBox
-                    p Clube de criação do rio de janeiro
-                    p banco inter
-                    p c/c xxx-xx
-                    p cnpj: XXXX.XXXX.XXXXX/0001
+                    h2 Como Pagar Com O Picpay
+                .picpaycontainer
+                    .picpaymedia
+                        img(src="../images/mockups.png", alt="")
+                    .infoBox
+                        p 1) Baixe o aplicativo PicPay na Apple Store ou no Google Play
+                        p 2) Cadastre-se e clique no botão pagar
+                        p 3) No campo "Quem você quer pagar?" busque por "@ccrj"
+                        p 4) Digite o valor e escreva o nome da agência no campo mensagem
+                        p 5) Insira dos dados do seu cartão e efetue o pagamento
+                        .picpayappstore
+                            a(href="https://apps.apple.com/br/app/picpay-app-de-pagamentos/id561524792" target="_blank")
+                                img(src="../images/appStore.png", alt="")
+                            a(href="https://play.google.com/store/apps/details?id=com.picpay&hl=pt_BR" target="_blank")
+                                img(src="../images/androidStore.png", alt="")
         section.form
             .wrapper   
                 .titleBox

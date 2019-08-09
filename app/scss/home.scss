@@ -157,29 +157,41 @@ section.bankData {
   background-repeat: no-repeat;
   background-position: bottom;
   padding-bottom: 100px;
-  .titleBox {
-    &::after {
-      content: "";
-      position: absolute;
-      background: url("../images/bankbar.png");
-      background-repeat: no-repeat;
-      width: 100%;
-      left: 0;
-      background-position: center;
-      height: 5px;
-    }
-  }
   .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 80px;
-    .infoBox {
-      margin-top: 80px;
-      p {
-        font-size: 42px;
-        font-weight: 500;
-        text-align: center;
+    .picpaycontainer {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 140px;
+      .infoBox {
+        margin-top: 30px;
+        p {
+          font-size: 23px;
+          font-weight: 500;
+        }
+      }
+      .picpayappstore {
+        display: flex;
+        margin-top: 100px;
+        img {
+          margin-right: 25px;
+        }
+      }
+    }
+    .titleBox {
+      &::after {
+        content: "";
+        position: absolute;
+        background: url("../images/bankbar.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        left: 0;
+        background-position: center;
+        height: 5px;
       }
     }
   }
